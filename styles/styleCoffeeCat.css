@@ -1,0 +1,343 @@
+
+@font-face {
+    font-family: "Samantha";
+    src: url('../fonts/Samantha.ttf');
+}
+
+@font-face{
+    font-family: 'Gilgan';
+    src: url('../fonts/Gilgan.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Gilgan', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* style del header */
+header {
+    background-color: #844d6c;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position:-webkit-sticky; 
+    position:sticky;
+    top: 0;
+    z-index: +1;
+}
+
+
+#cat-container {
+    background-color: #863b87;
+    flex: 0.25;
+    position: relative;
+    /* border: 2px solid #e7f5f2; */
+    height: 85px;
+    width: 200px;
+} 
+#cat-head {
+    background-color: #E9967A;
+    height: 32.5px;
+    width: 48px;
+    position: absolute;
+    bottom: 10px;
+    left: 115px;
+    border-radius: 0px 80px 80px 0px;
+}
+.cat-ear {
+    height: 7.5px;
+    width: 10px;
+    background-color: #E9967A;
+    position: absolute;
+    bottom: 32px;
+    left: 2px;
+    border-radius: 20px 0 0 0;
+    box-shadow: 25px 0 #E9967A;
+}
+.cat-eye,
+.cat-eye::before {
+    height: 4px;
+    width: 5px;
+    border: 2px solid #000000;
+    position: absolute;
+    border-radius: 0 0 15px 15px;
+    border-top: none;
+}
+.cat-eye {
+    top: 10px;
+    left: 14px;
+}
+.cat-eye::before {
+    content: "";
+    left: 16px;
+}
+.cat-nose {
+    background-color: #ffffff;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    box-shadow: 12px 0 #ffffff;
+}
+.cat-nose::before {
+    content: "";
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 6px;
+}
+.cat-nose::after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid #FF4500;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: 4px;
+    left: 6px;
+}
+.cat-mouth {
+    background-color: #000000;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    border-radius: 10px;
+    top: 23px;
+    left: 23px;
+
+}
+#cat-body {
+    background-color: #E9967A;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+    border-radius: 60px 60px 0 0;
+}
+#cat-tail {
+    background-color: #E9967A;
+    height: 10px;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 20px 0 0 20px;
+}
+#cat-body::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 6px;
+    width: 15px;
+    bottom: 0px;
+    left: 4px;
+    border-radius: 6px;
+    box-shadow: 45px 0 #ffffff;
+}
+.bubble {
+    height: 16px;
+    width: 16px;
+    background-color: rgb(128, 128, 128, 0.6);
+    position: absolute;
+    left: 160px;
+    bottom: 24px;
+    border-radius: 50px 50px 50px 5px;
+}
+/* Aquí finaliza el código del gato  */
+
+
+h1 {
+    background-color: #863b87;
+    flex: 0.3;
+    font-family: 'Samantha';
+    font-size: 3em;
+    padding: 10px 10px 0px 20px;
+    margin: 0;
+    z-index: +1;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+nav {
+    background-color: #863b87;
+    flex: 1;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    padding: 25px 25px 5px 25px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #70d4b4;
+    text-align: right;
+    align-content: flex-end;
+    padding: 10px;
+}
+
+/** style de la descripción **/
+#descripcion {
+    background-color: #02c39a;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.section-left {
+    background-color: #863b87;
+    flex: 1.5;
+    padding: 0px 5px 10px 20px;
+    margin: 10px;
+}
+
+.section-right {
+    background-color: #863b87;
+    flex: 0.7;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 3em;
+    color: #02c39a;
+}
+
+.menu-titulo {
+    width: 100%;
+    background-color: #863b87;
+    text-align: center;
+}
+
+.section-left p {
+    font-size: 2em;
+}
+
+
+/* style de las promociones */
+.img-promocion {
+    position: relative;
+    display: inline-block;
+    background-image: url('../img/promocion-semana.jpeg');
+    width: 1259px; /*1259*/
+    height: 400px;
+    margin: 10px;
+    /*
+    bacground-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+
+.anuncio1 {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    color: #863b87;
+}
+
+.anuncio2 {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    color: #02c39a;
+    font-size: 2em;
+    text-align: right;
+}
+
+/* style del menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    color: #02c39a;
+}
+
+.menu-titulo .menu-tienda {
+    width: 100%;
+    background-color: #02c39a;
+    text-align: center;
+}
+
+.card {
+    background-color: #02c39a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-container h4 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Aqui empieza el footer/contacto */
+.footer {
+    background-color: #863b87;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 0px 20px 0px;
+    margin: 80px 0px 80px 0px;
+}
+
+.footer1 {
+    flex: 1;
+}
+
+.footer2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #02c39a;
+    color: #863b87;
+    align-content: stretch;
+}
+
+.footer2 a {
+    padding: 100px;
+    color: #863b87;
+}
+
+.footer2 img {
+    padding: 50px 0px 0px 50px;
+}
+
+.footer3 {
+    flex: 1;
+}
+
+/********  Aquí ira el style de la Tienda de Regalos    ******/
+
+main {
+    color: antiquewhite;
+}
+
+button {
+    background-color: #863b87;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+button:hover {
+    background-color: #FF4500;
+    color: #000000
+}
+
